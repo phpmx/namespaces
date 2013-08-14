@@ -1,11 +1,3 @@
-namespances
-===========
-
-PHP namespaces v0.0.1
-
-Overview
-=======
-
 Los namesoaces o nombres de espacio están disponibles a partir de PHP 5.3 . Como los define php.net de manera muy burda "son la manera de encapsular items", está definición puede sonar demaciado abstracta pero así lo es.
 
 ### Ejemplo:
@@ -18,54 +10,51 @@ sample1.php
 run `php sample1.php`
 
 output
-```
-Hola Mundo
-Hola Mundo
-Hola Mundo
-Hola Mundo
-Hola Mundo
-Hola Mundo
-```
+
+	Hola Mundo
+	Hola Mundo
+	Hola Mundo
+	Hola Mundo
+	Hola Mundo
+	Hola Mundo
 
 Código
 
-```php
-<?php
-
-namespace hola\mundo;
-
-class HolaMundo {
-	public function hi(){
+	<?php
+	
+	namespace hola\mundo;
+	
+	class HolaMundo {
+		public function hi(){
+			echo "Hola Mundo \r\n";
+		}
+	}
+	
+	function holaMundo(){
 		echo "Hola Mundo \r\n";
 	}
-}
-
-function holaMundo(){
-	echo "Hola Mundo \r\n";
-}
-
-const HOLA_MUNDO = "Hola Mundo \r\n";
-
-# llamamos a la clase directamente
-$hola = new HolaMundo;
-$hola->hi();
-
-# llamamos a la funcion directamente
-holaMundo();
-
-# llamamos a la contante directamente
-echo HOLA_MUNDO;
-
-# llamamos a la clase usando namespaces
-$hola = new \hola\mundo\HolaMundo;
-$hola->hi();
-
-# llamamos a la funcion usando namespaces
-\hola\mundo\holaMundo();
-
-# llamamos a la contante usando namespaces
-echo \hola\mundo\HOLA_MUNDO;
-```
+	
+	const HOLA_MUNDO = "Hola Mundo \r\n";
+	
+	# llamamos a la clase directamente
+	$hola = new HolaMundo;
+	$hola->hi();
+	
+	# llamamos a la funcion directamente
+	holaMundo();
+	
+	# llamamos a la contante directamente
+	echo HOLA_MUNDO;
+	
+	# llamamos a la clase usando namespaces
+	$hola = new \hola\mundo\HolaMundo;
+	$hola->hi();
+	
+	# llamamos a la funcion usando namespaces
+	\hola\mundo\holaMundo();
+	
+	# llamamos a la contante usando namespaces
+	echo \hola\mundo\HOLA_MUNDO;
 
 IMPORTANTE
 ==========
@@ -79,17 +68,13 @@ La palabra reservada para definir a los namespaces es **namespace**
 
 ejemplo:
 
-```php
-<?php
-namespace MyProject;
-```
+	<?php
+	namespace MyProject;
 
 Los name spaces deben ser declarados al princio del script, aqui tenemos un ejemplo de un namespace mal declarado
 
-```php
-<?php
-namespace MyProject;
-```
+	<?php
+	namespace MyProject;
 
 Más Info
 ==========
@@ -99,6 +84,5 @@ Más Info
 ### [Síguenos en Github](https://github.com/phpmx)
 
 ### Clonanos 
-```
-git clone git@github.com:phpmx/namespaces.git
-```
+
+	git clone git@github.com:phpmx/namespaces.git
