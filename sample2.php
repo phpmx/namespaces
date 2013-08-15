@@ -61,13 +61,13 @@ namespace hello\world{
 	echo HOLA_MUNDO;
 
 	# llamamos a la clase usando namespaces
-	$hola = new \hola\mundo\HolaMundo;
+	$hola = new \hello\world\HolaMundo;
 	$hola->hi();
 
 	# llamamos a la funcion usando namespaces
-	\hola\mundo\holaMundo();
+	\hello\world\holaMundo();
 
 	# llamamos a la contante usando namespaces
-	echo \hola\mundo\HOLA_MUNDO;
+	echo \hello\world\HOLA_MUNDO;
 }
 

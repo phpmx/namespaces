@@ -88,6 +88,7 @@ Los name spaces deben ser declarados al princio del script, aqui tenemos un ejem
 
 ```php
 <?php
+$a = 0;
 namespace MyProject;
 ```
 

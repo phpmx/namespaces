@@ -74,6 +74,7 @@ ejemplo:
 Los name spaces deben ser declarados al princio del script, aqui tenemos un ejemplo de un namespace mal declarado
 
 	<?php
+	$a = 0;
 	namespace MyProject;
 
 Más Info
